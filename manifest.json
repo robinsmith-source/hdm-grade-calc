@@ -1,0 +1,22 @@
+{
+  "name": "Grade Calculator",
+  "description": "Calculates your grade based on the weights of your assignments.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "grade_calc.png",
+     "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "background.js"
+      ],
+      "matches": [
+        "https://vw-online.hdm-stuttgart.de/*menuid=notenspiegel*"
+      ]
+    }
+  ]
+}
+
+
